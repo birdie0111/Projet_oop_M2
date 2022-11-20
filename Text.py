@@ -49,9 +49,20 @@ class Text:
         print(stat_dic)
         return stat_dic
     
+    def lemma(self):
+        lemma_dic = {}
+        print("\nLemma:\n")
+        for tok in self.nlp_toks:
+            lemma_dic[tok.text] = tok.lemma_
+            print("{} ---> {}\n".format(tok.text, tok.lemma_))
+        return lemma_dic
         
-
-
+    def research(self, tok_cherche):
+        appear_times = 0
+        for tok in self.nlp_toks:
+            if (tok.text == tok_cherche or tok.lemma_ == tok_cherche):
+                appear_times += 1
+        return appear_times
 
     def length_verify(self, min, max):
         if (self.content != None):
