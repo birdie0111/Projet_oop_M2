@@ -1,0 +1,62 @@
+1	Les	DET	1	le	Definite=Def|Number=Plur|PronType=Art	
+2	valeurs	NOUN	1	valeur	Gender=Fem|Number=Plur	
+3	HEAD	PROPN	1	HEAD	Gender=Masc|Number=Sing	
+4	et	CCONJ	2	et		
+5	DEPREL	PROPN	1	DEPREL		
+6	définissent	VERB	1	définir	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	
+7	les	DET	3	le	Definite=Def|Number=Plur|PronType=Art	
+8	dépendances	NOUN	4	dépendance	Gender=Masc|Number=Plur	
+9	de	ADP	7	de		
+10	base	NOUN	2	base	Gender=Fem|Number=Sing	
+11	qui	PRON	3	qui	PronType=Rel	
+12	doivent	VERB	1	devoir	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	
+13	être	AUX	1	être	VerbForm=Inf	
+14	strictement	ADV	1	strictement		
+15	arborescentes	VERB	1	arborescenter	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	
+16	.	PUNCT	2	.		
+17	Cependant	ADV	1	cependant		
+18	,	PUNCT	7	,		
+19	en	ADP	2	en		
+20	plus	ADV	1	plus		
+21	ces	DET	1	ce	Number=Plur|PronType=Dem	
+22	treebanks	NOUN	1	treebank	Number=Plur	
+23	peuvent	VERB	1	pouvoir	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	
+24	éventuellement	ADV	1	éventuellement		
+25	fournir	VERB	1	fournir	VerbForm=Inf	
+26	une	DET	2	un	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	
+27	représentation	NOUN	2	représentation	Gender=Fem|Number=Sing	
+28	dépendance	NOUN	2	dépendance	Gender=Fem|Number=Sing	
+29	améliorée	VERB	2	améliorer	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	
+30	spécifie	VERB	1	spécifier	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	
+31	des	ADP	3	de	Definite=Def|Number=Plur|PronType=Art	
+32	relations	NOUN	1	relation	Gender=Fem|Number=Plur	
+33	supplémentaires	ADJ	1	supplémentaire	Number=Plur	
+34	par	ADP	1	par		
+35	exemple	NOUN	1	exemple	Gender=Masc|Number=Sing	
+36	lorsque	SCONJ	1	lorsque		
+37	se	PRON	1	se	Person=3|Reflex=Yes	
+38	propagent	VERB	1	propager	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	
+39	sur	ADP	1	sur		
+40	structures	NOUN	1	structure	Gender=Masc|Number=Plur	
+41	coordonnées	NOUN	1	coordonnée	Gender=Fem|Number=Plur	
+42	La	DET	1	le	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	
+43	est	AUX	2	être	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	
+44	général	NOUN	1	général	Gender=Masc|Number=Sing	
+45	un	DET	2	un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	
+46	graphe	NOUN	1	graphe	Gender=Masc|Number=Sing	
+47	non	ADV	1	non		
+48	arbre	NOUN	1	arbre	Gender=Masc|Number=Sing	
+49	spécifiée	VERB	1	spécifier	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	
+50	dans	ADP	1	dans		
+51	le	DET	1	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	
+52	champ	NOUN	1	champ	Gender=Masc|Number=Sing	
+53	DEPS	NOUN	1	dep	Gender=Masc|Number=Sing	
+54	à	ADP	1	à		
+55	l'	DET	1	le	Definite=Def|Number=Sing|PronType=Art	
+56	aide	NOUN	1	aide	Number=Sing	
+57	d'	ADP	1	de		
+58	liste	NOUN	1	liste	Gender=Fem|Number=Sing	
+59	paires	NOUN	1	paire	Gender=Fem|Number=Plur	
+60	tête	NOUN	1	tête	Gender=Fem|Number=Sing	
+61	-	PUNCT	1	-		
+62	relation	NOUN	1	relation	Gender=Fem|Number=Sing	

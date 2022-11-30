@@ -1,4 +1,1 @@
-C'est vraiment difficile pour une fille à apprendre à jouer au football , j'ai eu des malentendus qui viennent
-des parents, des profs etc., il y a toujours des clichés sur le genre. Mais heureusement, j'ai décidé de prendre
-le risque et commencé par cours de football proposé par université, même si il y a des blessures après chaque cours,
-je me sens quand même très contente. 
+Les valeurs HEAD et DEPREL définissent les dépendances de base qui doivent être strictement arborescentes. Cependant, en plus de ces dépendances de base, les treebanks peuvent éventuellement fournir une représentation de dépendance améliorée qui spécifie des relations de dépendance supplémentaires, par exemple, lorsque les dépendances se propagent sur des structures de coordonnées. La représentation améliorée des dépendances, qui est en général un graphe et non un arbre, est spécifiée dans le champ DEPS, à l'aide d'une liste de paires tête-relation

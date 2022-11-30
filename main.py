@@ -1,6 +1,5 @@
 from Text import Text
 from argparse import ArgumentParser
-#import csv
 
 parser = ArgumentParser()
 parser.add_argument("--txt_path", help = 'fichier d\'entrée en format .txt, utf-8')
@@ -17,6 +16,15 @@ parser.add_argument("--terminal_output", help = 'true or false to show or hide t
 
 
 def merge_text(text, txt_path):
+    """Fonction pour obtenir texte pures (S'il y a input dans terminal et dans un fichier, cette fonction va les fusionner ensemble)
+
+        Args:
+            text: String, texte inséré dans terminal
+            txt_path: String, chemin vers fichier .txt comme input
+        Returns:
+            text: String, texte pure
+
+    """
     if (text == None):
         text = ""
     if (txt_path != None):
@@ -30,37 +38,40 @@ def main(text, txt_path, analyse_type, research_token, csv_path, conllu_path, la
     t = Text(text, language, min_len, max_len)
     if (terminal_output == None):
         terminal_output = True
+    
+    # Fait les analyses et obtient les dictionnaires qui sauvegardent les résultats
+    dic_pos = t.POS_tagging(terminal_output = False)
+    dic_statistics = t.statistics(terminal_output = False)
+    dic_lemma = t.lemma(terminal_output = False)
+    dic_morpho = t.morphology(terminal_output = False)
+    # Obtenir un dictionnaire qui sauvegarde tous les résultats
+    all_info = t.merge_dict([dic_pos, dic_statistics, dic_lemma, dic_morpho])
+
+    # Sortir fichiers csv et conllu
     if (csv_path != None):
         print("\nLe resultat d'analyse sera sauvegardé dans le fichier: " + csv_path + "")
-
-        if (analyse_type == "pos"):
-            pos_dict = t.POS_tagging(terminal_output)
-            t.to_csv(analyse_type, pos_dict, csv_path)
-        elif (analyse_type == "statistics"):
-            stat_dict = t.statistics(terminal_output)
-            t.to_csv(analyse_type, stat_dict, csv_path)
-        elif (analyse_type == "lemma"):
-            lemma_dict = t.lemma(terminal_output)
-            t.to_csv(analyse_type, lemma_dict, csv_path)
-    elif (conllu_path != None):
+        t.to_csv(all_info, csv_path)
+    if (conllu_path != None):
         print("\nLe resultat d'analyse sera sauvegardé dans le fichier: " + conllu_path + "")
-        dic_pos = t.POS_tagging(terminal_output = False)
-        dic_statistics = t.statistics(terminal_output = False)
-        dic_lemma = t.lemma(terminal_output = False)
-        all_info = t.merge_dict([dic_pos, dic_statistics, dic_lemma])
         t.to_conllu(all_info, conllu_path)
-    else:
-        print("\nLe resultat d'analyse ne sera pas sauvegard.")
 
+    # Affichage seule sur terminal
+    if (conllu_path == None and csv_path == None):
+        print("\nLe resultat d'analyse ne sera pas sauvegard.")
         if (analyse_type == "pos"):
-            t.POS_tagging()
+            t.POS_tagging(terminal_output)
         elif (analyse_type == "statistics"):
-            t.statistics()
+            t.statistics(terminal_output)
         elif (analyse_type == "lemma"):
-            t.lemma()
+            t.lemma(terminal_output)
+        elif (analyse_type == "morpho"):
+            t.morphology(terminal_output)
         elif(analyse_type == "research"):
             times = t.research(research_token)
             print("\nLe token est apparaît {} fois dans le texte.\n".format(times))
+        else:
+            print("\nError: No analyse type\n")
+            exit()
 
 if __name__ == "__main__":
     args = parser.parse_args()

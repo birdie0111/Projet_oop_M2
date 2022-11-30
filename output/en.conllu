@@ -1,0 +1,55 @@
+1	The	DET	2	the	Definite=Def|PronType=Art	
+2	HEAD	PROPN	1	HEAD	Number=Sing	
+3	and	CCONJ	2	and	ConjType=Cmp	
+4	DEPREL	PROPN	1	DEPREL	Number=Sing	
+5	values	NOUN	1	value	Number=Plur	
+6	define	VERB	1	define	Tense=Pres|VerbForm=Fin	
+7	the	DET	2	the	Definite=Def|PronType=Art	
+8	basic	ADJ	2	basic	Degree=Pos	
+9	dependencies	NOUN	3	dependency	Number=Plur	
+10	which	PRON	2	which		
+11	must	AUX	1	must	VerbForm=Fin	
+12	be	AUX	1	be	VerbForm=Inf	
+13	strictly	ADV	1	strictly		
+14	a	DET	4	a	Definite=Ind|PronType=Art	
+15	tree	NOUN	2	tree	Number=Sing	
+16	.	PUNCT	2	.	PunctType=Peri	
+17	However	ADV	1	however		
+18	,	PUNCT	7	,	PunctType=Comm	
+19	in	ADP	3	in		
+20	addition	NOUN	1	addition	Number=Sing	
+21	to	ADP	1	to		
+22	these	DET	1	these	Number=Plur|PronType=Dem	
+23	treebanks	NOUN	1	treebank	Number=Plur	
+24	may	AUX	1	may	VerbForm=Fin	
+25	optionally	ADV	1	optionally		
+26	provide	VERB	1	provide	VerbForm=Inf	
+27	an	DET	1	an	Definite=Ind|PronType=Art	
+28	enhanced	VERB	2	enhanced	Degree=Pos	
+29	dependency	NOUN	3	dependency	Number=Sing	
+30	representation	NOUN	2	representation	Number=Sing	
+31	that	PRON	1	that	PronType=Rel	
+32	specifies	VERB	1	specify	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	
+33	additional	ADJ	1	additional	Degree=Pos	
+34	relations	NOUN	1	relation	Number=Plur	
+35	for	ADP	1	for		
+36	example	NOUN	1	example	Number=Sing	
+37	when	SCONJ	1	when		
+38	propagate	VERB	1	propagate	Tense=Pres|VerbForm=Fin	
+39	over	ADP	1	over		
+40	coordinate	NOUN	1	coordinate	Number=Sing	
+41	structures	NOUN	1	structure	Number=Plur	
+42	general	ADJ	1	general	Degree=Pos	
+43	is	AUX	2	be	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	
+44	graph	NOUN	1	graph	Number=Sing	
+45	not	PART	1	not	Polarity=Neg	
+46	specified	VERB	1	specify	Aspect=Perf|Tense=Past|VerbForm=Part	
+47	DEPS	PROPN	1	DEPS	Number=Sing	
+48	field	NOUN	1	field	Number=Sing	
+49	using	VERB	1	use	Aspect=Prog|Tense=Pres|VerbForm=Part	
+50	list	NOUN	1	list	Number=Sing	
+51	of	ADP	1	of		
+52	head	NOUN	1	head	Number=Sing	
+53	-	PUNCT	1	-	PunctType=Dash	
+54	relation	NOUN	1	relation	Number=Sing	
+55	pairs	NOUN	1	pair	Number=Plur	
